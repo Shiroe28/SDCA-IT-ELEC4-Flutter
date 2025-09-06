@@ -7,14 +7,22 @@ void main() {
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Scaffold homepage = Scaffold(appBar: AppBar(title: Text('Homepage')));
+    Scaffold homepage = Scaffold(
+      appBar: AppBar(title: Text('Homepage')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // TODO: Implemention Button.
+        },
+        child: const Icon(Icons.add),
+      ),
+    );
 
     return MaterialApp(
       home: homepage,
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.red,
-          foregroundColor: Colors.blue,
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.red,
         ),
       ),
     );
